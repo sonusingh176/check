@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/index.css">
+    <title>Document</title>
+
+   
+
+  </head>
+  <body>
+    <div class="container">
+
+      <main>
+
+        <div class="style-main-img">
+            <div>
+                <img src="../Assets/Yello umbrella.png" alt="" id="u-img">
+            </div>
+        </div>
+
+
+        <div class="style-main-selection">
+            
+                <h1>Custom Umbrella</h1>
+                <span class="color-picker">
+                    <label for="myblue" class="lb-blue"> <input type="radio" value="blue" id="myblue" onclick="handleColor(this)"></label>
+                   
+                    
+
+                    <label for="myyellow" class="lb-yellow"> <input type="radio" value="yellow" id="myyellow" onclick="handleColor(this)"></label>
+                   
+
+                    <label for="mypink" class="lb-pink">  <input type="radio" value="pink" id="mypink" onclick="handleColor(this)"></label>
+                  
+                </span>
+                <span>
+                    <h4>Customize your umbrella</h4>
+                    <p>Upload a logo for an instant preview.</p>
+                    <p>.png and .jpg files only.Max file size is 5MB.</p>
+                </span>
+                <button id="upload">UPLOAD LOGO</button>
+            
+        </div>
+
+      </main>
+
+    </div>
+    <script  type="module" src="../js/index.js"></script>
+  </body>
+</html>
