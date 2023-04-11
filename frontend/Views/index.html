@@ -7,47 +7,75 @@
     <link rel="stylesheet" href="../public/index.css">
     <title>Document</title>
 
-   
+
 
   </head>
   <body>
     <div class="container">
 
-      <main>
+      <main class="style_main">
 
         <div class="style-main-img">
-            <div>
-                <img src="../Assets/Yello umbrella.png" alt="" id="u-img">
-            </div>
+            
+                <img src="../Assets/Blue_umbrella.png" alt="" id="u-img">
+                <span class="rot-loader-icon">   </span>
+                <!-- <img src="" alt="" id="style-logo-land"> -->
+                         
         </div>
 
 
         <div class="style-main-selection">
-            
+
                 <h1>Custom Umbrella</h1>
                 <span class="color-picker">
                     <label for="myblue" class="lb-blue"> <input type="radio" value="blue" id="myblue" onclick="handleColor(this)"></label>
-                   
-                    
+
+
 
                     <label for="myyellow" class="lb-yellow"> <input type="radio" value="yellow" id="myyellow" onclick="handleColor(this)"></label>
-                   
+
 
                     <label for="mypink" class="lb-pink">  <input type="radio" value="pink" id="mypink" onclick="handleColor(this)"></label>
-                  
+
                 </span>
-                <span>
+                <span class="desctxt">
                     <h4>Customize your umbrella</h4>
                     <p>Upload a logo for an instant preview.</p>
                     <p>.png and .jpg files only.Max file size is 5MB.</p>
                 </span>
-                <button id="upload">UPLOAD LOGO</button>
-            
+
+                <span id="style-logo-updater">
+
+                  <label for="selectlogo" class="loader-icon">
+                    <img src="../Assets/upload_icon.svg" alt="" id="upload-bucket-icon">
+                    <input type="file" name="" id="selectlogo">
+                  </label>
+                
+
+                  <label for="" id="logotxt">UPLOAD LOGO</label>
+
+                  <label for="" id="cancel-icon"></label>
+
+                  
+                </span>
+
         </div>
 
       </main>
 
     </div>
-    <script  type="module" src="../js/index.js"></script>
+    <!-- <script  type="module">
+      import { handleColor,ublue,uyellow,upink } from   '../js/index.js';
+      window.handleColor = handleColor;
+      window.ublue = ublue;
+      window.uyellow = uyellow;
+      window.upink = upink;
+      console.log(ublue, uyellow, upink)
+    </script> -->
+    <script type="module" src="../js/index.js"></script>
+    <script>
+    </script>
+
   </body>
 </html>
+
