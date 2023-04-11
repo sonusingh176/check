@@ -133,10 +133,13 @@ img{width: 270px;}
 }
 
 #style-logo-land{
-    width: 65px;
-    position: relative;
-    top: -61px;
-    left: 107px;
+   width: 65px;
+    /* border: 1px solid red; */
+    position: absolute;
+    /* top: 47px; */
+    bottom: 37%;
+    /* right: 2px; */
+    left: 32%;
 }
 
  .uploader-rotaate{

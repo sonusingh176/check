@@ -17,8 +17,8 @@ function handleColor(c){
         
         imgchange.src = ublue;
         uploadlabel.style.backgroundColor='#40b4e5'
-        bgcont.style.backgroundColor='#b4e4ff';
-        bgmain.style.backgroundColor='#b4e4ff'
+        bgcont.style.backgroundColor='rgb(224 234 239 / 48%)';
+        bgmain.style.backgroundColor='rgb(224 234 239 / 48%)'
 
         
         loaderCreator()
@@ -80,20 +80,22 @@ var fileName ;
 
 function loaderCreator(){
     let spanbucket=document.querySelector(".rot-loader-icon");
-    // let logov1=document.querySelector("#style-logo-land");
+     
       let Loimg=document.createElement("img")
       Loimg.className='u-loader-img';
       Loimg.src=loader;
-      Loimg.setAttribute("fill", "red");
+      // Loimg.setAttribute("fill", "red");
 
       spanbucket.append(Loimg);
      
       imgchange.style.display='none'
+      
     
       setTimeout(() => {
        
         Loimg.remove();
         imgchange.style.display='block'
+        
         
       }, 2000);
 
@@ -119,7 +121,7 @@ function handle_companylogo(){
     let logo_place=document.querySelector(".style-main-img");
     let logov1=document.createElement("img");
     logov1.id='style-logo-land';
-    logo_place.append(logov1)
+    
     let holdlogoNm= URL.createObjectURL(selectLogo.files[0]);
      fileName = selectLogo.files[0].name;
 
@@ -129,7 +131,7 @@ function handle_companylogo(){
     
 
     setTimeout(() => {
-        
+      logo_place.append(logov1)
         Loimg.remove()
         logov1.src=holdlogoNm;
         imgchange.style.display='block'
